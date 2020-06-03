@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="style_form.css">
+</head>
+<body>
+<main>
+    <article class="title_1">
+        <h1 id="title">Disney Quiz</h1>
+        <p id="description"> Your preferences at Disney</p>
+    </article>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name
+            </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name, please..." required/>
+        </div>
+
+        <div>
+            <label id="email-label" for="email">Email
+            </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+        </div>
+
+        <div>
+            <label id="number-label" for="age">Age(optional)
+            </label>
+            <input id="number" type="number" name="age" placeholder="Enter your age" min="16" max="99"/>
+        </div>
+
+        <div>
+            <p class="label_like">Which part of Disney cinema do you like more</p>
+            <select id="dropdown" name="role" class="form-control" required="">
+                <option>Select current cinema</option>
+                <option value="full">Feature-length сartoon</option>
+                <option value="movie">Movie</option>
+                <option value="series">Series cartoon</option>
+            </select>
+        </div>
+
+        <div>
+            <p class="label_like">Could you recommend this quiz to a friend?</p>
+            <label><input class="radio_choice" type="radio" name="reccomendation" value="definitely"/> Definitely </label>
+            <label> <input class="radio_choice" type="radio" name="reccomendation" value="maybe"/> Maybe</label>
+            <label><input class="radio_choice" type="radio" name="reccomendation" value="not_sure"/> Not sure</label>
+        </div>
+
+        <div>
+            <p class="label_like">What is your favorite princess?</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+                <option >Select an option</option>
+                <option value="challenges">Cinderella</option>
+                <option value="projects">Aurora</option>
+                <option value="community">Ariel</option>
+                <option value="openSource">Belle</option>
+                <option value="openSource">Snow White</option>
+                <option value="openSource">Jasmine</option>
+            </select>
+        </div>
+
+        <div>
+            <p class="label_like">What cartoon do you like more? (Choose more than one option)</p>
+            <label>
+                <input class="checkbox" name="prefer" value="snow-white" type="checkbox" />Snow White
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="cinderella" type="checkbox" />Cinderella
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="sleeping-beauty" type="checkbox" />Sleeping Beauty
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="little-mermaid" type="checkbox" />The Little Mermaid
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="beaury-and-beast" type="checkbox" />Beauty and the Beast
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="aladdin" type="checkbox" />Aladdin
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="pocahontas" type="checkbox" />Pocahontas
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="mulan" type="checkbox" />Mulan
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="princess-frog" type="checkbox" />The Princess and the Frog
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="frozen" type="checkbox" />Frozen
+            </label>
+            <label>
+                <input class="checkbox" name="prefer" value="moana" type="checkbox" />Moana
+            </label>
+        </div>
+
+        <div>
+            <p class="label_like">Any comments or suggestions?</p>
+            <textarea name="comments" placeholder="Please, enter your comments..."></textarea>
+        </div>
+
+        <div>
+            <input id="submit" type="submit" value="Submit"/>
+        </div>
+    </form>
+</main>
+</body>
+</html>

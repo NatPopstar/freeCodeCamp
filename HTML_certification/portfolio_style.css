@@ -1,0 +1,141 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(0deg, rgba(125,0,0,1) 0%, rgba(255,231,146,1) 100%);
+        margin-top: 0;
+    }
+}
+
+body {
+    background: linear-gradient(0deg, rgba(125,0,0,1) 0%, rgba(255,231,146,1) 100%);
+    margin-top: 0;
+}
+main {
+    background: #e3cb7d;
+}
+nav#navbar {
+    background: #6f0000;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+nav#navbar > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li.logo {
+    flex: 7 1 auto;
+}
+nav ul li {
+    flex: 1 1 auto;
+}
+li > a{
+    color: #fff;
+    text-decoration: none;
+}
+section#welcome-section {
+    font-family: 'Courier', Verdana, sans-serif;
+    text-align: center;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+p.welc_sect{
+    color: #8f0e2d;
+    font-style: italic;
+    font-size: 20px;
+}
+div#stud-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+div.studied {
+    flex: 1 1 auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+div.process_stud {
+    flex: 1 1 auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+section#projects {
+    background: #7b0000;
+    text-align: center;
+    font-family: 'Courier', Verdana, sans-serif;
+    color: #fff;
+    padding-top: 30px;
+    height: 100%;
+}
+div#my_works {
+    display: flex;
+    flex-wrap: wrap;
+}
+p.project-tile {
+    color: #7b0000;
+    margin: 0;
+    padding: 10px;
+}
+a.a1 {
+    margin: 20px;
+    background: #e3cb7d;
+}
+a.a1 > img, a#profile-link {
+    flex: 1 1 250px;
+    filter: brightness(20%);
+    transition: filter 1s;
+}
+a.a1 > img:hover, a#profile-link:hover {
+    filter: brightness(100%);
+}
+a.a1 img {
+    width: 100%;
+}
+section#soc {
+    background: #e3cb7d;
+    height: calc(100vh - 58px);
+}
+div.soc2 {
+    height: 100%;
+}
+#soc ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img.img_a {
+    width: 80px;
+    height: 20px;
+}
+a#profile-link {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+p.foot {
+    flex: 1 1 auto;
+    color: #fff;
+}
+p.foot1 {
+    flex: 0 1 auto;
+    color: #fff;
+}

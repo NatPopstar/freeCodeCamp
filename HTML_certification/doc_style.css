@@ -1,0 +1,82 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+#navbar {
+    background: pink;
+    flex: 1 0 300px;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    font-family: 'Courier', Verdana, sans-serif;
+
+}
+header.navbar-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Courier', Verdana, sans-serif;
+    font-weight: bold;
+}
+ul {
+    padding: 0;
+}
+#navbar li {
+    border-top: 1px solid black;
+    padding: 15px;
+    list-style: none;
+
+
+}
+#navbar li:before {
+    content: "✨";
+}
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+#main-doc {
+    background: #665abf;
+    flex: 10 1 auto;
+    font-family: 'Arial';
+    line-height: 1.5;
+    font-size: 1.6em;
+}
+h2 {
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 0;
+    margin-right: 80px;
+}
+section {
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    margin-right: 80px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+}
+p.img {
+    text-align: center;
+}
+
+#flex_float {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+#flex_float img {
+    flex: 1 1 500px;
+    margin: 10px;
+    width: 100px;
+}
+#flex_float p {
+    flex: 10 1 500px;
+}
