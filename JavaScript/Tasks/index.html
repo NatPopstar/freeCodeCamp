@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+</head>
+<body>
+<script>
+    function factorial(n){
+        let x = 1;
+        for(let i = 1; i <= n; i++) {
+            x = x * i;  // x *= i;
+        }
+        return x;
+    }
+
+    function fact_func(n){
+        return [...new Array(n).keys()].map(i => i + 1).reduce((a, b) => a * b)
+    }
+
+</script>
+
+</body>
+</html>

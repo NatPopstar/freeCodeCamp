@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+</head>
+<body>
+<script>
+    var count = 0;
+
+    function cc(card) {
+        // Only change code below this line
+        if (2 <= card && card <= 6) {
+            console.log(++count);
+        } else if([10, 'J', 'Q', 'K', 'A'].includes(card)) {
+            console.log(--count);
+        }
+
+        return count + (count > 0 ? " Bet" : " Hold");
+        // Only change code above this line
+    }
+
+    cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+</script>
+</body>
+</html>

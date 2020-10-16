@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Function </title>
+</head>
+<body>
+    <form id="greeting">
+        <input name="smthname" type="text" placeholder="name"/>
+        <input type="submit" value="Click me!"/>
+    </form>
+<script>
+    document.getElementById("greeting").addEventListener("submit", btn);
+    function btn(event) {
+        var a = event.target.smthname.value; //event.target[0].value обращаемся к форме-инпут
+        event.preventDefault(); //не делать какие-либо действия по-умолчанию
+        console.log(event);
+        func(a);
+    }
+
+    function func(name) {
+        alert("Привет, " + name + "!");
+    }
+
+
+</script>
+
+</body>
+</html>
